@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACN,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "style.scss",
+        "styles/_navBar.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

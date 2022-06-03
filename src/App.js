@@ -1,12 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar.js';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Pixel Art Shop</h1>
-      <p>Umbert André</p>
-    </div>
+    < div className="App" >
+      <NavBar />
+    </div >
   );
 }
 
