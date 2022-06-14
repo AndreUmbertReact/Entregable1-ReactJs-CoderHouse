@@ -1,0 +1,6 @@
+.itemListContainer {
+  width: 90%;
+  margin: 3% 5% 0 5%;
+  border: 0.3vw solid rgb(255, 180, 193);
+  background-color: rgb(253, 238, 241);
+}

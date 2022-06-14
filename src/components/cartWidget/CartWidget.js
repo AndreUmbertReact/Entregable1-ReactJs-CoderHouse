@@ -1,8 +1,9 @@
-import cart from '../../assets/cart.svg';
+import { BsCart3 } from 'react-icons/bs';
+
 
 const CartWidget = () => {
     return (
-        <li className="navBarLi"><a className="liAnchor" href="#"><img src={cart} alt="Icono de carrito de compras"></img></a></li>
+        <li className="navBarLi"><a className="liAnchor" href="#"><BsCart3 fontSize={"1.3vw"} /></a></li >
     )
 }
 

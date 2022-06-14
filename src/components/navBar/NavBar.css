@@ -11,6 +11,10 @@
   align-self: center;
 }
 
+.logoImg {
+  margin-left: 0.3vw;
+}
+
 .navBar {
   width: 40%;
 }
