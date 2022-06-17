@@ -1,0 +1,68 @@
+.itemCountContainer {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.itemName {
+  font-weight: bold;
+  text-align: left;
+}
+
+.itemCounter {
+  border: 1px solid black;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 1vw;
+  background-color: rgb(251, 252, 247);
+}
+
+.removeButton {
+  background-color: white;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.remove {
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+.countNumber {
+  font-size: 3vw;
+  margin: 0;
+  font-weight: 600;
+  line-height: 0;
+}
+
+.addButton {
+  background-color: white;
+  border: none;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.add {
+  font-size: 3vw;
+  cursor: pointer;
+}
+
+.addCartButton {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgb(255, 180, 193);
+  border-radius: 5px;
+  background-color: white;
+  font-size: 2vw;
+  padding: 0.3vw;
+  margin-bottom: 2vw;
+}
+
+.addCartButton:hover {
+  background-color: rgb(255, 180, 193);
+}
