@@ -1,11 +1,6 @@
 .itemCountContainer {
-  width: 30%;
-  margin-left: 35%;
-}
-
-.itemName {
-  font-weight: bold;
-  text-align: left;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .itemCounter {
