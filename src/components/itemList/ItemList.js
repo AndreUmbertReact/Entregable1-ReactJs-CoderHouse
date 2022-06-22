@@ -5,8 +5,8 @@ import "./ItemList.css";
 const ItemList = ({ items }) => {
   return (
     <div className="list">
-      {items.map((item) => (
-        <Item items={item} />
+      {items.map((item, indice) => (
+        <Item items={item} key={indice} />
       ))}
     </div>
   );

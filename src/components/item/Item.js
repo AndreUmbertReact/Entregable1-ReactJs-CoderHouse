@@ -3,25 +3,23 @@ import "./Item.css";
 import ItemCount from "../itemCount/ItemCount";
 
 const Item = ({ items }) => {
-  console.log(items);
-
   const onAdd = (counter) => {
     console.log(counter);
   };
 
   return (
     <div className="itemDiv">
-      <h3 className="itemName">{items.name}</h3>
+      <h3 className="itemName">{items.login}</h3>
       <img
         className="itemImg"
-        src={items.pictureUrl}
+        src={items.avatar_url}
         alt="Imagen de cartera"
       ></img>
-      <p className="itemPrice">Precio: ${items.price}</p>
+      <p className="itemPrice">Precio: ${items.id}</p>
       <button className="detailsButton">Detalles</button>
-      <ItemCount stock={items.stock} min={1} onAdd={onAdd} />
+      <ItemCount stock={items.id} min={1} onAdd={onAdd} />
       <div className="stockDiv">
-        <p className="stockText">Stock: {items.stock}</p>
+        <p className="stockText">Stock: {items.id}</p>
       </div>
     </div>
   );
