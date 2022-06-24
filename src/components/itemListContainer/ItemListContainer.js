@@ -35,11 +35,6 @@ const ItemListContainer = (props) => {
 
 
   useEffect(() => {
-    let timeout;
-
-    function delayFunction() {
-      timeout = setTimeout(fetchFunction, 2000);
-    }
 
     function fetchFunction() {
       fetch('https://api.github.com/users')
@@ -47,8 +42,8 @@ const ItemListContainer = (props) => {
         .then((info) => setItems(info))
     }
 
+    setTimeout(fetchFunction, 2000);
 
-    delayFunction();
 
   }, []);
 
