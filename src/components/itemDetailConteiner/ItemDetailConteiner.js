@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import ItemDetail from "../itemDetail/ItemDetail";
 import { useParams, Link } from "react-router-dom";
 import "../itemDetailConteiner/ItemDetailContainer.css"
+import { getProductById } from "../../data/data";
 
 
-const ItemDetailContainer = (props) => {
+const ItemDetailContainer = () => {
 
-    const [usuario, setUsuario] = useState({});
+    const [item, setItem] = useState({});
 
     let { id } = useParams();
-    console.log(id);
+
+
     useEffect(() => {
 
-        function axiosFunction() {
-            axios(`https://api.github.com/users/${id}`)
-                .then((res) => setUsuario(res.data));
-        }
+        console.log(id);
 
-        setTimeout(axiosFunction, 2000);
+        getProductById(id)
+            .then(res => {
+                setItem(res);
+            })
+
+        setTimeout(getProductById, 2000);
 
 
     }, [id]);
@@ -26,8 +29,7 @@ const ItemDetailContainer = (props) => {
 
     return (
         <div className="itemDetailContainer">
-            <Link to={`/user/${id}`}> <ItemDetail usuario={usuario} /></Link>
-
+            <Link to={`/item/${id}`}> <ItemDetail item={item} /></Link>
         </div>
     )
 }

@@ -3,3 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.anchorItem {
+  margin: 1vw;
+  text-decoration: none;
+  width: 25vw;
+}
