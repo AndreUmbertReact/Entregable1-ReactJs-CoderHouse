@@ -3,6 +3,7 @@ import ItemListContainer from "./components/itemListContainer/ItemListContainer"
 import "./App.css";
 import ItemDetailContainer from "./components/itemDetailConteiner/ItemDetailConteiner";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Cart from "./views/Cart";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           ></Route>
           <Route path="/item/:id" element={<ItemDetailContainer />} />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </div>
     </Router>

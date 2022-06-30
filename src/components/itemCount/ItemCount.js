@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
 import "./ItemCount.css"
+import { Link } from "react-router-dom";
+import Cart from "../../views/Cart";
 
 const ItemCount = ({ stock, min, onAdd }) => {
 
@@ -11,7 +13,6 @@ const ItemCount = ({ stock, min, onAdd }) => {
     const counterUp = () => {
         if (counter < stock) {
             setCounter(counter + 1);
-            console.log(setCounter = (counter + 1));
         } else {
             console.log("You are actually out of stock");
             alert("You are actually out of stock");
@@ -28,7 +29,12 @@ const ItemCount = ({ stock, min, onAdd }) => {
 
     };
 
+    const [add, setAdd] = useState(1);
 
+    function pushCarrito() {
+        onAdd(counter)
+        setAdd(counter)
+    }
 
     return (
         <div className="itemCountContainer">
@@ -37,7 +43,7 @@ const ItemCount = ({ stock, min, onAdd }) => {
                 <p className="countNumber">{counter}</p>
                 <button className="addButton" onClick={counterUp}><IoIosAdd className="add" /></button>
             </div>
-            <button className="addCartButton" onClick={() => onAdd(counter)}>Agregar al carrito</button>
+            <Link to={"/cart"} element={<Cart />}><button className="addCartButton" onClick={pushCarrito}>Agregar al carrito</button></Link>
         </div>
     )
 

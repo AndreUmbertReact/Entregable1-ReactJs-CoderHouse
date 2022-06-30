@@ -14,8 +14,6 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
 
-        console.log(id);
-
         getProductById(id)
             .then(res => {
                 setItem(res);
@@ -29,7 +27,7 @@ const ItemDetailContainer = () => {
 
     return (
         <div className="itemDetailContainer">
-            <Link to={`/item/${id}`}> <ItemDetail item={item} /></Link>
+            <Link className="itemDetailLink" to={`/item/${id}`}> <ItemDetail item={item} /></Link>
         </div>
     )
 }

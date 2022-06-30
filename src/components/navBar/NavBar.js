@@ -15,7 +15,7 @@ const NavBar = () => {
 
     useEffect(() => {
 
-        console.log(categoryId);
+        // console.log(categoryId);
 
         getProductsByCategoryId(categoryId)
             .then(res => {
