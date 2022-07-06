@@ -2,10 +2,12 @@ import React from "react";
 import ItemCount from '../itemCount/ItemCount';
 import "./ItemDetail.css";
 
+
+
 const ItemDetail = ({ item }) => {
 
-    const onAdd = (add) => {
 
+    const onAdd = (add) => {
         console.log(add);
     }
 
@@ -17,7 +19,7 @@ const ItemDetail = ({ item }) => {
             <img className='itemImg' src={item.pictureUrl} alt="Imagen del item" />
             <p className='itemInfo' >{item.details}</p>
             <p className='itemPrice'>$ {item.price}</p>
-            <ItemCount className="itemCount" stock={item.stock} min={1} onAdd={onAdd} />
+            <ItemCount className="itemCount" data={item} stock={item.stock} min={1} onAdd={onAdd} />
         </div >
     );
 

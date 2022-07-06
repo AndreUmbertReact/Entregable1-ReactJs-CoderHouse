@@ -7,7 +7,8 @@ export const products = [
         stock: 20,
         category: "Bandolera",
         categoryId: 1,
-        details: "Es una bandolera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela."
+        details: "Es una bandolera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela.",
+        quantity: 0
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const products = [
         stock: 10,
         category: "Mochila",
         categoryId: 2,
-        details: "Es una mochila para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela."
+        details: "Es una mochila para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela.",
+        quantity: 0
     },
     {
         id: 3,
@@ -27,7 +29,8 @@ export const products = [
         stock: 5,
         category: "Riñonera",
         categoryId: 3,
-        details: "Es una riñonera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela."
+        details: "Es una riñonera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela.",
+        quantity: 0
     },
     {
         id: 4,
@@ -37,7 +40,8 @@ export const products = [
         stock: 30,
         category: "Sobre",
         categoryId: 4,
-        details: "Es una sobre para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela."
+        details: "Es una sobre para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela.",
+        quantity: 0
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ export const products = [
         stock: 10,
         category: "Riñonera",
         categoryId: 3,
-        details: "Es una riñonera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela."
+        details: "Es una riñonera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela.",
+        quantity: 0
     },
     {
         id: 6,
@@ -57,7 +62,8 @@ export const products = [
         stock: 50,
         category: "Billetera",
         categoryId: 5,
-        details: "Es una billetera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela."
+        details: "Es una billetera para el uso de todos los dias. Combina con gran numero de prendas y tenemos existencia en varios colores de tela.",
+        quantity: 0
     }
 ];
 

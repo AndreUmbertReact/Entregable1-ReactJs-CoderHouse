@@ -1,0 +1,6 @@
+.cartDiv {
+  display: flex;
+  align-items: center;
+  width: 3vw;
+  justify-content: space-between;
+}

@@ -1,10 +1,10 @@
+import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import logo from "../../assets/logo.png"
 import CartWidget from '../cartWidget/CartWidget';
 import { Link, useParams } from "react-router-dom";
 import ItemListContainer from "../itemListContainer/ItemListContainer";
 import { getProductsByCategoryId } from "../../data/data";
-import React, { useState, useEffect } from "react";
 
 const NavBar = () => {
 
@@ -14,8 +14,6 @@ const NavBar = () => {
 
 
     useEffect(() => {
-
-        // console.log(categoryId);
 
         getProductsByCategoryId(categoryId)
             .then(res => {
