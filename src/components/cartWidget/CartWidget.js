@@ -8,23 +8,14 @@ import "./CartWidget.css";
 
 
 const CartWidget = () => {
-    const [items, setItems] = useContext(CartContext);
-    console.log(items);
 
-    let cartQuantity = 0;
-
-    for (let index = 0; index < items.length; index++) {
-        cartQuantity += items[index].quantity;
-
-    }
-
-    console.log(cartQuantity);
+    const [cartList, addCart, isInCart, itemsQuantity, clear] = useContext(CartContext);
 
     return (
-        <div className="cartDiv">
-            <Link className="liAnchor" to={"/cart"} element={<Cart />} ><li className="navBarLi"><BsCart3 fontSize={"1.3vw"} /></li ></Link>
-            <p>{cartQuantity}</p>
-        </div>
+        cartList.length === 0 ? null : <Link to={"/cart"} className="cartDiv">
+            <li className="navBarLi liAnchor"><BsCart3 fontSize={"1.3vw"} /></li >
+            <p className="navBarLi liAnchor">{itemsQuantity()}</p>
+        </Link>
     )
 }
 

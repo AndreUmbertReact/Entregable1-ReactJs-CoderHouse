@@ -3,11 +3,11 @@ import Item from "../item/Item";
 import "./ItemList.css";
 
 
-const ItemList = ({ items }) => {
+const ItemList = ({ carteras }) => {
   return (
     <div className="list">
-      {items.map((item, indice) => (
-        <Item items={item} key={indice} />
+      {carteras.map((cartera, indice) => (
+        <Item carteras={cartera} key={indice} />
       ))}
     </div>
   );

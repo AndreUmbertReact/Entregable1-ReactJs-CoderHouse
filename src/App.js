@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import NavBar from "./components/navBar/NavBar";
 import ItemListContainer from "./components/itemListContainer/ItemListContainer";
 import "./App.css";
@@ -10,8 +10,8 @@ import Cart from "./views/Cart";
 function App() {
 
   return (
-    <ProductsProvider>
-      <Router>
+    <Router>
+      <ProductsProvider>
         <div className="App">
           <NavBar />
           <Routes>
@@ -24,8 +24,8 @@ function App() {
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </div>
-      </Router>
-    </ProductsProvider>
+      </ProductsProvider>
+    </Router>
   );
 }
 

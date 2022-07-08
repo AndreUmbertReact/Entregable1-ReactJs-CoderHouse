@@ -7,7 +7,7 @@ import { getProductById } from "../../data/data";
 
 const ItemDetailContainer = () => {
 
-    const [item, setItem] = useState({});
+    const [carteras, setCarteras] = useState({});
 
     let { id } = useParams();
 
@@ -16,20 +16,17 @@ const ItemDetailContainer = () => {
 
         getProductById(id)
             .then(res => {
-                setItem(res);
+                setCarteras(res);
             })
-
-        setTimeout(getProductById, 2000);
-
-
     }, [id]);
 
 
     return (
         <div className="itemDetailContainer">
-            <Link className="itemDetailLink" to={`/item/${id}`}> <ItemDetail item={item} /></Link>
+            <ItemDetail carteras={carteras} />
         </div>
     )
 }
 
+// <Link className="itemDetailLink" to={`/item/${id}`}> <ItemDetail carteras={carteras} /></Link>
 export default ItemDetailContainer;

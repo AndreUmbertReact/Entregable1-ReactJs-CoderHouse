@@ -1,16 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
 import "./ItemCount.css"
 import { Link } from "react-router-dom";
 import Cart from "../../views/Cart";
-import { CartContext } from "../cartContext/CartContext";
 
-const ItemCount = ({ data, stock, min, onAdd }) => {
+const ItemCount = ({ stock, min, onAdd }) => {
     const [counter, setCounter] = useState(min);
-
-    const [item, setItem] = useContext(CartContext)
-    console.log(item);
 
     const counterUp = () => {
         if (counter < stock) {
@@ -33,17 +29,6 @@ const ItemCount = ({ data, stock, min, onAdd }) => {
 
     const [add, setAdd] = useState(1);
 
-    const getItems = [item]
-    console.log(getItems);
-    const newItem = [data];
-    console.log(newItem);
-
-    function pushCarrito() {
-        onAdd(counter)
-        setAdd(counter)
-        newItem[0].quantity = counter;
-        setItem(newItem);
-    }
 
 
     return (
@@ -54,7 +39,7 @@ const ItemCount = ({ data, stock, min, onAdd }) => {
                 <p className="countNumber">{counter}</p>
                 <button className="addButton" onClick={counterUp}><IoIosAdd className="add" /></button>
             </div>
-            <Link to={"/cart"} element={<Cart />}><button className="addCartButton" onClick={pushCarrito}>Agregar al carrito</button></Link>
+            <button className="addCartButton" onClick={() => onAdd(counter)}>Agregar al carrito</button>
             {/* <button onClick={Delete}>Delete</button> */}
         </div>
     )
@@ -62,7 +47,7 @@ const ItemCount = ({ data, stock, min, onAdd }) => {
 
 }
 
-
+{/* <Link to={"/cart"} element={<Cart />}><button className="addCartButton" onClick={onAdd()}>Agregar al carrito</button></Link> */ }
 
 
 export default ItemCount;

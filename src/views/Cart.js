@@ -1,33 +1,31 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import Item from "../components/item/Item";
 import { CartContext } from "../components/cartContext/CartContext";
-
+import { CartDetail } from "../components/cartDetail/CartDetail";
+import "./Cart.css";
+import { CartSummary } from "../components/cartSummary/CartSummary";
 
 
 const Cart = () => {
 
-    const [items, setItems] = useContext(CartContext);
-    console.log(items);
-
-
-
-    for (let index = 0; index < items.length; index++) {
-        if (items[index].quantity === 0) {
-            items.splice(index, 1);
-            index--;
-            setItems(items);
-        }
-    }
+    const [cartList, addCart, isInCart, itemsQuantity, clear, totalPrice] = useContext(CartContext);
+    console.log(cartList);
 
 
 
     return (
-        <div className="list">
-            {items.map((item, indice) => (
-                <Item items={item} key={indice} />
-            ))}
+        <div className="listCartContainer" >
+            <div className="listCart">
+                <h1 className="listTitle">Carrito</h1>
+                {cartList.map((item, indice) => (
+                    <CartDetail item={item} key={indice} />
+                ))}
+            </div>
+            <CartSummary />
         </div>
     );
+
+
 }
 
 export default Cart;

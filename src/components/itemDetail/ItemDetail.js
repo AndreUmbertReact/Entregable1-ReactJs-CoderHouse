@@ -1,25 +1,28 @@
-import React from "react";
+import React, { useContext, useParams } from "react";
 import ItemCount from '../itemCount/ItemCount';
 import "./ItemDetail.css";
+import { CartContext } from "../cartContext/CartContext";
 
 
+const ItemDetail = ({ carteras }) => {
 
-const ItemDetail = ({ item }) => {
+    const [cartList, addCart, isInCart, itemsQuantity, clear] = useContext(CartContext);
 
+    const onAdd = (quantity) => {
 
-    const onAdd = (add) => {
-        console.log(add);
+        addCart(carteras, quantity);
     }
 
 
 
+
     return (
-        <div className="itemDetail" id={item.id} key={item.id}>
-            <h4 className="itemName">{item.name}</h4>
-            <img className='itemImg' src={item.pictureUrl} alt="Imagen del item" />
-            <p className='itemInfo' >{item.details}</p>
-            <p className='itemPrice'>$ {item.price}</p>
-            <ItemCount className="itemCount" data={item} stock={item.stock} min={1} onAdd={onAdd} />
+        <div className="itemDetail" id={carteras.id} key={carteras.id}>
+            <h4 className="itemName">{carteras.name}</h4>
+            <img className='itemImg' src={carteras.pictureUrl} alt="Imagen del item" />
+            <p className='itemInfo' >{carteras.details}</p>
+            <p className='itemPrice'>$ {carteras.price}</p>
+            <ItemCount className="itemCount" stock={carteras.stock} min={1} onAdd={onAdd} />
         </div >
     );
 
