@@ -6,8 +6,11 @@ import ItemDetailContainer from "./components/itemDetailConteiner/ItemDetailCont
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ProductsProvider } from "./components/cartContext/CartContext";
 import Cart from "./views/Cart";
+import { async } from "@firebase/util";
+import CategoryList from "../src/components/categoryList/CategoryList";
 
 function App() {
+
 
   return (
     <Router>
@@ -20,8 +23,8 @@ function App() {
               element={<ItemListContainer greeting="Carteras" />}
             ></Route>
             <Route path="/item/:id" element={<ItemDetailContainer />} />
-            <Route path="/category/:categoryId" element={<ItemListContainer />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/categoryList/:category" element={<CategoryList />} />
+            <Route path="/cart" element={<CategoryList />} />
           </Routes>
         </div>
       </ProductsProvider>

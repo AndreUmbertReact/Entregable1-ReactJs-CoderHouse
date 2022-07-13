@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+}
+
+.backgroundCategoryList {
+  background-color: rgb(253, 238, 241);
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+
+.categoryListTitle {
+  margin-top: 2vw;
+  font-size: 3vw;
+  font-weight: 700;
+}

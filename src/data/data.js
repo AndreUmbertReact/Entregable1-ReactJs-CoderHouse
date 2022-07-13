@@ -82,16 +82,16 @@ export const getProductById = (id) => {
     })
 }
 
-export const getProductsByCategoryId = (categoryId) => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (products.length > 0) {
-                resolve(products.filter(category => category.categoryId === parseInt(categoryId)))
-            }
-            else {
-                reject('We dont have this product jet. Try again in a few hours')
-            }
-        }, 1500);
-    })
-}
+// export const getProductsByCategoryId = (categoryId) => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (products.length > 0) {
+//                 resolve(products.filter(product => product.categoryId === parseInt(categoryId)))
+//             }
+//             else {
+//                 reject('We dont have this product jet. Try again in a few hours')
+//             }
+//         }, 1500);
+//     })
+// }
 
