@@ -9,8 +9,6 @@ import { CartSummary } from "../components/cartSummary/CartSummary";
 const Cart = () => {
 
     const [cartList, addCart, isInCart, itemsQuantity, clear, totalPrice] = useContext(CartContext);
-    console.log(cartList);
-
 
 
     return (

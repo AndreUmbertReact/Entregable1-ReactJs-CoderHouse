@@ -4,8 +4,11 @@ import logo from "../../assets/logo.png"
 import CartWidget from '../cartWidget/CartWidget';
 import { Link, useParams } from "react-router-dom";
 import CategoryList from "../categoryList/CategoryList";
+import { CartContext } from "../cartContext/CartContext";
 
 const NavBar = () => {
+
+
 
     return (
         <header className="header">
