@@ -7,5 +7,17 @@
 .anchorItem {
   margin: 1vw;
   text-decoration: none;
-  width: 25vw;
+  width: 40vw;
+}
+
+@media (min-width: 1440px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .anchorItem {
+    width: 25vw;
+  }
 }

@@ -12,8 +12,9 @@ const CartWidget = () => {
     const [cartList, addCart, isInCart, itemsQuantity, clear] = useContext(CartContext);
 
     return (
-        cartList.length === 0 ? null : <Link to={"/cart"} className="cartDiv">
-            <li className="navBarLi liAnchor"><BsCart3 fontSize={"1.3vw"} /></li >
+        // cartList.length === 0 ? null : <Link to={"/cart"} className="cartDiv">
+        <Link to={"/cart"} className="cartDiv">
+            <li className="navBarLi liAnchor"><BsCart3 className="cartIcon" /></li >
             <p className="navBarLi liAnchor">{itemsQuantity()}</p>
         </Link>
     )

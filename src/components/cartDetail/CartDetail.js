@@ -13,7 +13,7 @@ export const CartDetail = ({ item }) => {
             <div className='itemCartInfo'>
                 <h3 className='itemCartTitle'>{item.name}</h3>
                 <div className='itemQuantity'>Cantidad: {item.quantity} unidades</div>
-                <p className='itemPrice'>Precio: ${item.price}-.</p>
+                <p className='itemPriceDetail'>Precio: ${item.price}-.</p>
                 <p className='itemSubtotal'>Subtotal: ${item.price * item.quantity}-.</p>
                 <button className='removeButtonCart'>Eliminar</button>
             </div>

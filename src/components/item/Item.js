@@ -7,7 +7,7 @@ const Item = ({ carteras }) => {
   return (
     <Link className="anchorItem" to={`/item/${carteras.id}`}>
       <div className="itemDiv">
-        <h3 className="itemName">{carteras.login}</h3>
+        <h3 className="itemName">{carteras.name}</h3>
         <img
           className="itemImg"
           src={carteras.pictureUrl}

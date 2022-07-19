@@ -1,6 +1,23 @@
 .cartDiv {
   display: flex;
   align-items: center;
-  width: 3vw;
-  justify-content: space-around;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.cartIcon {
+  font-size: 5vw;
+}
+
+@media (min-width: 1400px) {
+  .cartDiv {
+    display: flex;
+    align-items: center;
+    width: 3vw;
+    justify-content: space-around;
+  }
+
+  .cartIcon {
+    font-size: 1.3vw;
+  }
 }

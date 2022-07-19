@@ -1,52 +1,173 @@
 .header {
   display: flex;
   width: 100%;
-  height: 4vw;
-  background-color: rgb(255, 180, 192);
+  height: 15vw;
+  justify-content: space-between;
+  max-height: 125px;
+  background-color: white;
 }
 
 .logo {
   width: 60%;
+  height: 10vw;
   display: flex;
-  align-self: center;
 }
 
 .logoImg {
-  width: 100%;
-  height: 100%;
+  width: 30vw;
+  max-width: 125px;
+  height: 15vw;
+  max-height: 56px;
 }
 
 .navBar {
+  position: absolute;
+  top: -700px;
+  left: -2000px;
   width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: all 0.7s ease;
+  right: 0;
+  z-index: 3;
 }
 
-.navBarUl {
-  display: flex;
-  height: 100%;
-  justify-content: space-around;
-  position: relative;
-  margin: 0;
-  align-items: center;
+.navBar.active {
+  width: 100%;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  left: 0;
+  right: 0;
 }
 
 .navBarLi {
   list-style: none;
   font-weight: bold;
-  font-size: 1.1vw;
   cursor: pointer;
+  display: block;
+  margin: 1vw 0;
 }
 
 .liAnchor {
+  font-size: 5vw;
   color: black;
   text-decoration: none;
 }
 
-.liAnchor:hover {
-  text-decoration: underline;
-  color: rgb(219, 66, 117);
+.backgroundDiv {
+  position: absolute;
+  background-color: rgb(253 182 243);
+  top: -1000px;
+  left: -2000px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.6s ease;
 }
 
-.anchorLogo {
-  width: 9vw;
-  height: 3.8vw;
+.backgroundDiv.active {
+  border-radius: 0 0 80% 0;
+  transition: all 0.6s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backgroundBlur {
+  position: absolute;
+  backdrop-filter: blur(6px);
+  top: -1000px;
+  left: -2000px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.backgroundBlur.active {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition-delay: 0.05s;
+}
+
+.liAnchor:hover {
+  text-decoration: underline;
+  color: rgb(255 146 240);
+}
+
+@media (min-width: 1400px) {
+  .header {
+    display: flex;
+    width: 100%;
+    height: 4vw;
+  }
+
+  .logo {
+    height: 4vw;
+    width: 60%;
+    display: flex;
+    align-self: center;
+  }
+
+  .logoImg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .navBar {
+    position: initial;
+    width: 40%;
+    margin: 0;
+  }
+
+  .navBar.active {
+    position: initial;
+    width: 40%;
+    margin: 0;
+  }
+
+  .navBarUl {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+    margin: 0;
+    align-items: center;
+  }
+
+  .navBarLi {
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.1vw;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .liAnchor {
+    color: black;
+    text-decoration: none;
+    font-size: 1vw;
+  }
+
+  .backgroundDiv {
+    display: none;
+  }
+
+  .backgroundBlur {
+    display: none;
+  }
+
+  .logoImg {
+    height: 4vw;
+    max-width: none;
+    width: 100%;
+    max-height: none;
+  }
 }
