@@ -6,9 +6,18 @@ import "./Cart.css";
 import { CartSummary } from "../components/cartSummary/CartSummary";
 
 
+
 const Cart = () => {
 
     const [cartList, addCart, isInCart, itemsQuantity, clear, totalPrice] = useContext(CartContext);
+
+    const [summary, setSummary] = useState(false);
+
+
+    function changeBoolean() {
+        setSummary(summary => !summary);
+        console.log(summary);
+    }
 
 
     return (
@@ -19,7 +28,8 @@ const Cart = () => {
                     <CartDetail item={item} key={indice} />
                 ))}
             </div>
-            <CartSummary />
+            <button className="getCheckOutButton" onClick={changeBoolean}>Check Out</button>
+            {summary && <CartSummary style={{ display: 'block' }} />}
         </div>
     );
 

@@ -4,7 +4,7 @@ import { CartContext } from "../cartContext/CartContext";
 
 export const CartDetail = ({ item }) => {
 
-    const [cartList, addCart, isInCart, itemsQuantity, clear, totalPrice] = useContext(CartContext);
+    const [cartList, addCart, isInCart, itemsQuantity, clear, totalPrice, eliminarItem] = useContext(CartContext);
 
 
     return (
@@ -15,7 +15,7 @@ export const CartDetail = ({ item }) => {
                 <div className='itemQuantity'>Cantidad: {item.quantity} unidades</div>
                 <p className='itemPriceDetail'>Precio: ${item.price}-.</p>
                 <p className='itemSubtotal'>Subtotal: ${item.price * item.quantity}-.</p>
-                <button className='removeButtonCart'>Eliminar</button>
+                <button className='removeButtonCart' onClick={() => eliminarItem(item.id)}>Eliminar</button>
             </div>
         </div>
     )

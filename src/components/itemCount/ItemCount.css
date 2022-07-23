@@ -5,7 +5,7 @@
 
 .itemCounter {
   border: 1px solid black;
-  width: 99%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,22 +14,22 @@
   transform: translateX(-50%);
   margin-bottom: 1vw;
   background-color: rgb(251, 252, 247);
+  padding: 1vw;
 }
 
 .removeButton {
   background-color: white;
   border: none;
   padding: 0;
-  border-radius: 5px;
 }
 
 .remove {
-  font-size: 3vw;
+  font-size: 5vw;
   cursor: pointer;
 }
 
 .countNumber {
-  font-size: 3vw;
+  font-size: 5vw;
   margin: 0;
   font-weight: 600;
   line-height: 0;
@@ -43,21 +43,49 @@
 }
 
 .add {
-  font-size: 3vw;
+  font-size: 5vw;
   cursor: pointer;
 }
 
 .addCartButton {
-  width: 100%;
+  width: 99%;
   cursor: pointer;
-  border: 1px solid rgb(255, 180, 193);
+  border: 1px solid rgb(253 182 243);
   border-radius: 5px;
   background-color: white;
-  font-size: 2vw;
+  font-size: 4vw;
   padding: 0.3vw;
   margin-bottom: 2vw;
+  padding: 1vw;
 }
 
 .addCartButton:hover {
-  background-color: rgb(255, 180, 193);
+  background-color: rgb(253 182 243);
+}
+
+@media (min-width: 1440px) {
+  .itemCounter {
+    width: 96.7%;
+  }
+
+  .remove {
+    font-size: 3vw;
+  }
+
+  .countNumber {
+    font-size: 3vw;
+  }
+
+  .add {
+    font-size: 3vw;
+  }
+
+  .addCartButton {
+    width: 100%;
+    font-size: 2vw;
+  }
+
+  .addCartButton:hover {
+    background-color: rgb(255, 180, 193);
+  }
 }

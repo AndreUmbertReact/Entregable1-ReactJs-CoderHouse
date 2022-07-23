@@ -7,9 +7,9 @@ const Item = ({ carteras }) => {
   return (
     <Link className="anchorItem" to={`/item/${carteras.id}`}>
       <div className="itemDiv">
-        <h3 className="itemName">{carteras.name}</h3>
+        <h3 className="itemNameList">{carteras.name}</h3>
         <img
-          className="itemImg"
+          className="itemImgList"
           src={carteras.pictureUrl}
           alt="Imagen de cartera"
         />

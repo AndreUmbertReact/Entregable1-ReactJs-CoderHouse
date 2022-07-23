@@ -1,21 +1,100 @@
 .cartSummary {
-  background-color: rgb(95, 158, 160);
-  width: 30%;
-  margin-left: 3%;
-  margin-top: 3%;
+  position: relative;
+  border: 2px solid rgb(95, 158, 160);
+  background-color: white;
+  width: 91%;
+  margin: 3% 0 5% 4.5%;
   border-radius: 5px;
+}
+
+.cartTitle {
+  font-size: 6vw;
+}
+
+.cartTextProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vw;
 }
 
 .finishOrder {
   border: none;
   border-radius: 5px;
   background-color: rgb(197, 227, 228);
-  padding: 1vw;
+  padding: 3.5vw 13.6vw;
   margin-bottom: 1vw;
-  font-size: 1.5vw;
+  font-size: 4vw;
   font-weight: 700;
 }
 
 .outlinedBasic {
   margin: 1vw 0;
+}
+
+.cartTextProductsEachOne {
+  width: 80%;
+}
+
+.totalPriceSummary {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceText {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+@media (min-width: 1440px) {
+  .cartSummary {
+    width: 50%;
+    margin: 3% 25% 5% 25%;
+    border-radius: 5px;
+  }
+
+  .cartTitle {
+    font-size: 3vw;
+    margin: 1vw;
+  }
+
+  .cartTextProducts {
+    display: flex;
+    width: 50%;
+    margin-left: 27%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .totalPriceSummary {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .priceText {
+    font-size: 1.3vw;
+    font-weight: bold;
+  }
+
+  .cartTextProductsEachOne {
+    width: 100%;
+  }
+
+  .finishOrder {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(197, 227, 228);
+    padding: 1.7vw 3vw;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+    font-weight: 700;
+    margin-top: 1vw;
+  }
 }
