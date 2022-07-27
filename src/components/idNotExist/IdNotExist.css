@@ -1,0 +1,55 @@
+.notExistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notExistText {
+  font-size: 5vw;
+}
+
+.notExistIcon {
+  font-size: 50vw;
+}
+
+.notExistRedirectButton {
+  border: none;
+  background-color: #f6c6ea;
+  border-radius: 5px;
+  padding: 2vw;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
+  font-family: "Marcellus", serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .notExistText {
+    font-size: 5vw;
+  }
+
+  .notExistIcon {
+    font-size: 20vw;
+  }
+
+  .notExistRedirectButton {
+    padding: 1.5vw;
+    margin-top: 3vw;
+    font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .notExistText {
+    font-size: 2vw;
+  }
+
+  .notExistIcon {
+    font-size: 10vw;
+  }
+
+  .notExistRedirectButton {
+    padding: 1vw;
+  }
+}

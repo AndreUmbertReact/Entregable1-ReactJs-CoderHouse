@@ -39,7 +39,7 @@ const ItemCount = ({ stock, min, onAdd }) => {
                 <p className="countNumber">{counter}</p>
                 <button className="addButton" onClick={counterUp}><IoIosAdd className="add" /></button>
             </div>
-            <button className="addCartButton" onClick={() => onAdd(counter)}>Agregar al carrito</button>
+            <button className="addCartButton" onClick={() => onAdd(counter)}>Add to cart</button>
             {/* <button onClick={Delete}>Delete</button> */}
         </div>
     )

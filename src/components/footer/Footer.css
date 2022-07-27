@@ -1,0 +1,55 @@
+.footerContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6c6ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerText {
+  font-size: 3vw;
+}
+
+.instagramIconAnchor {
+  cursor: pointer;
+  color: black;
+}
+
+.instagramIcon {
+  font-size: 4vw;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .footerContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw;
+  }
+
+  .footerText {
+    font-size: 2vw;
+  }
+
+  .instagramIcon {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footerContainer {
+    height: 4vw;
+  }
+
+  .footerText {
+    font-size: 1.5vw;
+  }
+
+  .instagramIcon {
+    font-size: 2vw;
+  }
+}

@@ -76,3 +76,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ---
 
 Here i will update info about this project in every presentation.
+
+web direction: https://namour-handbags.netlify.app

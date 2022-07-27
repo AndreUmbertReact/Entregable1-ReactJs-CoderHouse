@@ -3,7 +3,6 @@
 }
 
 .backgroundCategoryList {
-  background-color: rgb(253, 238, 241);
   width: 90%;
   margin-left: 5%;
   border-radius: 5px;
@@ -14,4 +13,16 @@
   margin-top: 2vw;
   font-size: 6vw;
   font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .categoryListTitle {
+    margin-bottom: 1vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .categoryListTitle {
+    font-size: 3vw;
+  }
 }

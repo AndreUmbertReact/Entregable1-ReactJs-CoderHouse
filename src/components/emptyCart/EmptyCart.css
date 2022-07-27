@@ -1,0 +1,49 @@
+.emptyCartDiv {
+  width: 100%;
+}
+
+.emptyCartImg {
+  width: 100%;
+}
+
+.emptyCartText {
+  font-size: 4vw;
+}
+
+.emptyCartButton {
+  border: none;
+  cursor: pointer;
+  background-color: #f6c6ea;
+  border-radius: 5px;
+  padding: 2vw;
+  font-family: "Marcellus", serif;
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .emptyCartImg {
+    width: 60%;
+  }
+
+  .emptyCartText {
+    font-size: 3vw;
+  }
+  .emptyCartButton {
+    padding: 1.5vw;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .emptyCartImg {
+    width: 40%;
+  }
+
+  .emptyCartText {
+    font-size: 2vw;
+  }
+  .emptyCartButton {
+    padding: 1vw;
+    font-size: 1.3vw;
+  }
+}

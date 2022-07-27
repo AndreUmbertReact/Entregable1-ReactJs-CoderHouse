@@ -5,7 +5,7 @@ import { Alert } from '@mui/material';
 const ErrorMessage = () => {
     return (
         <Stack sx={{ width: '100%' }} spacing={2}>
-            <Alert severity="warning">Error. Los emails no coinciden!</Alert>
+            <Alert severity="warning">Error. Emails do not match!</Alert>
         </Stack>)
 }
 

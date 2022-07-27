@@ -101,6 +101,10 @@
   color: rgb(255 146 240);
 }
 
+.navBarUl {
+  padding: 0;
+}
+
 @media (min-width: 1400px) {
   .header {
     display: flex;

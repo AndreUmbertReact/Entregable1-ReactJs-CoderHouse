@@ -8,12 +8,13 @@
   font-size: 4vw;
 }
 
-@media (min-width: 1440px) {
-  .orderItemsDiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+@media (min-width: 800px) {
+  .orderItemsTexts {
+    font-size: 2.3vw;
   }
+}
+
+@media (min-width: 1440px) {
   .orderItemsTexts {
     font-size: 1.3vw;
   }

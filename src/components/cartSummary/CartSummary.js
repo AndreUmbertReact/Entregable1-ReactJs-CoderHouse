@@ -71,7 +71,7 @@ export const CartSummary = () => {
     return (
         <div className='cartSummary'>
             {errorMail && <ErrorMessage />}
-            <h2 className='cartTitle'>Resumen de Orden</h2>
+            <h2 className='cartTitle'>Cart Summary</h2>
             <div className='cartTextProducts'>
                 <div className='cartTextProductsEachOne'>
                     {cartList.map((cartera, indice) => (
@@ -81,7 +81,7 @@ export const CartSummary = () => {
                 <div className='totalPriceSummary'><p className='priceText'>Total:</p> <p className='priceText'>${totalPrice()}</p></div>
             </div>
             <div >
-                <h1>Contact</h1>
+                <h3 className='formTitle'>Contact</h3>
                 <form className='cartForm' onSubmit={onSubmit}>
                     <TextField margin='normal' className="outlinedBasic" label="Name and Lastname" name="name" variant="outlined" value={values.name} onChange={handleOnChange} />
                     <TextField margin='normal' className="outlinedBasic" label="Phone" name="phone" variant="outlined" value={values.phone} onChange={handleOnChange} />

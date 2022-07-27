@@ -8,6 +8,8 @@ import { ProductsProvider } from "./components/cartContext/CartContext";
 import Cart from "./views/Cart";
 import { async } from "@firebase/util";
 import CategoryList from "../src/components/categoryList/CategoryList";
+import Footer from "./components/footer/Footer";
+
 
 function App() {
 
@@ -20,12 +22,13 @@ function App() {
           <Routes>
             <Route
               path="/"
-              element={<ItemListContainer greeting="Productos" />}
+              element={<ItemListContainer greeting="Products" />}
             ></Route>
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/categoryList/:category" element={<CategoryList />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Footer />
         </div>
       </ProductsProvider>
     </Router>

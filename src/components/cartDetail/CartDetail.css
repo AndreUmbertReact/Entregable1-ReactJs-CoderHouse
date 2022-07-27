@@ -1,5 +1,4 @@
 .itemCart {
-  border: 0.4vw solid rgb(253 182 243);
   border-radius: 5px;
   width: 92%;
   margin: 1vw 0;
@@ -41,11 +40,99 @@
 }
 
 .removeButtonCart {
-  background-color: rgb(253 182 243);
+  background-color: #f6c6ea;
   width: 80%;
   font-size: 3vw;
   font-weight: 600;
   border: none;
   padding: 1vw;
   border-radius: 5px;
+}
+
+@media (min-width: 800px) {
+  .itemCart {
+    width: 70%;
+    margin: 1vw 0;
+    display: flex;
+  }
+
+  .itemCartImg {
+    width: 50%;
+    height: 25vw;
+    border-radius: 0px;
+  }
+
+  .itemCartInfo {
+    width: 50%;
+    margin-left: 0%;
+  }
+
+  .itemCartTitle {
+    font-size: 3vw;
+  }
+
+  .itemQuantity {
+    font-size: 2vw;
+  }
+
+  .itemPriceDetail {
+    font-size: 2vw;
+  }
+
+  .itemSubtotal {
+    font-size: 2vw;
+  }
+
+  .removeButtonCart {
+    width: 30%;
+    font-size: 2vw;
+    font-weight: 600;
+    border: none;
+    padding: 0.5vw;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .itemCart {
+    width: 50%;
+    margin: 1vw 0;
+    display: flex;
+  }
+
+  .itemCartImg {
+    width: 50%;
+    height: 20vw;
+    border-radius: 0px;
+  }
+
+  .itemCartInfo {
+    width: 50%;
+    margin-left: 0%;
+  }
+
+  .itemCartTitle {
+    font-size: 3vw;
+  }
+
+  .itemQuantity {
+    font-size: 2vw;
+  }
+
+  .itemPriceDetail {
+    font-size: 2vw;
+  }
+
+  .itemSubtotal {
+    font-size: 2vw;
+  }
+
+  .removeButtonCart {
+    width: 30%;
+    font-size: 1vw;
+    font-weight: 600;
+    border: none;
+    padding: 0.5vw;
+    border-radius: 5px;
+  }
 }

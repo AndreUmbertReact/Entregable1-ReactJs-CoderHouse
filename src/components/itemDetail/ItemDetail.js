@@ -3,7 +3,6 @@ import ItemCount from '../itemCount/ItemCount';
 import "./ItemDetail.css";
 import { CartContext } from "../cartContext/CartContext";
 
-
 const ItemDetail = ({ carteras }) => {
 
     const [cartList, addCart, isInCart, itemsQuantity, clear] = useContext(CartContext);
@@ -12,8 +11,6 @@ const ItemDetail = ({ carteras }) => {
 
         addCart(carteras, quantity);
     }
-
-
 
 
     return (

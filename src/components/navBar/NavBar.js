@@ -18,11 +18,11 @@ const NavBar = () => {
             <div className="logo"><Link className="anchorLogo" to={"/"}><img className="logoImg" src={logo} alt="Imagen del logo de la marca Namour Handbags" /></Link></div>
             <nav className={`navBar ${clicked ? "active" : " "}`}>
                 <ul className="navBarUl">
-                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Bandolera`} element={<CategoryList />}>Bandoleras</Link></li>
-                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Mochila`} element={<CategoryList />}>Mochilas</Link> </li>
-                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Riñonera`} element={<CategoryList />}>Riñoneras</Link></li>
-                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Sobre`} element={<CategoryList />}>Sobres</Link></li>
-                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Billetera`} element={<CategoryList />}>Billeteras</Link></li>
+                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Bandoliers`} element={<CategoryList />}>Bandoliers</Link></li>
+                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Backpacks`} element={<CategoryList />}>Backpacks</Link> </li>
+                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/FannyPacks`} element={<CategoryList />}>Fanny Packs</Link></li>
+                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Packets`} element={<CategoryList />}>Packets</Link></li>
+                    <li className="navBarLi"><Link className="liAnchor" to={`/categoryList/Wallets`} element={<CategoryList />}>Wallets</Link></li>
                     <CartWidget />
                 </ul>
             </nav>

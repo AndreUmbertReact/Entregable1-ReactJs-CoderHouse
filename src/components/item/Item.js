@@ -13,8 +13,8 @@ const Item = ({ carteras }) => {
           src={carteras.pictureUrl}
           alt="Imagen de cartera"
         />
-        <p className="itemPrice">Precio: ${carteras.price}</p>
-        <button className="detailsButton">Detalles</button>
+        <p className="itemPriceList">Price: ${carteras.price}</p>
+        <button className="detailsButton">Details</button>
         <div className="stockDiv">
           <p className="stockText">Stock: {carteras.stock}</p>
         </div>

@@ -12,10 +12,10 @@ export const CartDetail = ({ item }) => {
             <img className='itemCartImg' src={item.pictureUrl} alt={item.details} />
             <div className='itemCartInfo'>
                 <h3 className='itemCartTitle'>{item.name}</h3>
-                <div className='itemQuantity'>Cantidad: {item.quantity} unidades</div>
-                <p className='itemPriceDetail'>Precio: ${item.price}-.</p>
+                <div className='itemQuantity'>Quantity: {item.quantity} units</div>
+                <p className='itemPriceDetail'>Price: ${item.price}-.</p>
                 <p className='itemSubtotal'>Subtotal: ${item.price * item.quantity}-.</p>
-                <button className='removeButtonCart' onClick={() => eliminarItem(item.id)}>Eliminar</button>
+                <button className='removeButtonCart' onClick={() => eliminarItem(item.id)}>Delete</button>
             </div>
         </div>
     )

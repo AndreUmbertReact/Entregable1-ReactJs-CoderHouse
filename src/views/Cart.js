@@ -4,6 +4,7 @@ import { CartContext } from "../components/cartContext/CartContext";
 import { CartDetail } from "../components/cartDetail/CartDetail";
 import "./Cart.css";
 import { CartSummary } from "../components/cartSummary/CartSummary";
+import EmptyCart from "../components/emptyCart/EmptyCart";
 
 
 
@@ -19,17 +20,17 @@ const Cart = () => {
         console.log(summary);
     }
 
-
+    console.log(cartList);
     return (
         <div className="listCartContainer" >
             <div className="listCart">
-                <h1 className="listTitle">Carrito</h1>
+                {cartList.length > 0 ? <h1 className="listTitle">Cart</h1> : null}
                 {cartList.map((item, indice) => (
                     <CartDetail item={item} key={indice} />
                 ))}
             </div>
-            <button className="getCheckOutButton" onClick={changeBoolean}>Check Out</button>
-            {summary && <CartSummary style={{ display: 'block' }} />}
+            {cartList.length > 0 ? <button className="getCheckOutButton" onClick={changeBoolean}>Checkout</button> : <EmptyCart />}
+            {summary && cartList.length > 0 ? <CartSummary style={{ display: 'block' }} /> : null}
         </div>
     );
 
