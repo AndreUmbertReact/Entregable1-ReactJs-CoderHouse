@@ -9,7 +9,7 @@
   font-size: 5vw;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .cartDiv {
     display: flex;
     align-items: center;

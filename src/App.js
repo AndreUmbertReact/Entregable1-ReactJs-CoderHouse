@@ -6,7 +6,6 @@ import ItemDetailContainer from "./components/itemDetailConteiner/ItemDetailCont
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ProductsProvider } from "./components/cartContext/CartContext";
 import Cart from "./views/Cart";
-import { async } from "@firebase/util";
 import CategoryList from "../src/components/categoryList/CategoryList";
 import Footer from "./components/footer/Footer";
 

@@ -55,7 +55,7 @@
   background-color: black;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .nav-icon-5 {
     display: none;
   }
