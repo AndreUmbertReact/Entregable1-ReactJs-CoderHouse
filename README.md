@@ -145,17 +145,13 @@ Como ultima aclaracion respecto al proyecto: tiene 2 medias queries, es decir qu
 
 Aquí les dejo una breve demostración de la App:
 
-Mobile version
+Mobile version:
 
-https://user-images.githubusercontent.com/106835817/181657014-2b3aa476-bd45-4f04-8499-eee37ff690f9.mp4
-
-:
-
-[![Alt text](https://img.youtube.com/vi/NGb0s5gP35E/0.jpg)](https://www.youtube.com/watch?v=NGb0s5gP35E)
+https://user-images.githubusercontent.com/106835817/181657520-45ee76a1-8a0a-40e6-9064-3a1a91dc5580.mp4
 
 Desktop version:
 
-[![Alt text](https://img.youtube.com/vi/g34bA_JQjgw/0.jpg)](https://www.youtube.com/watch?v=g34bA_JQjgw)
+https://user-images.githubusercontent.com/106835817/181657014-2b3aa476-bd45-4f04-8499-eee37ff690f9.mp4
 
 Muchas gracias por leer y pueden revisar el proyecto en la siguiente dirección:
 https://namour-handbags.netlify.app
